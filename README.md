@@ -32,44 +32,25 @@ The fastest path is Google Colab (one click, zero install). Open Notebook 1 and 
 
 ---
 
-## Your assignment notebooks — open, fill, save, done
+## Project Notebooks — 2-Notebook Architecture
 
-Every assignment is one pre-named skeleton notebook in `work/notebooks/`. Click its badge,
-fill the sections in order, then **File → Save a copy in GitHub → OK** — the dialog is
-already pre-filled with your repo and the right path.
+The project has been consolidated into two modular, clean skeleton notebooks in [`work/notebooks/`](file:///c:/Users/Matienzo/Desktop/DA-Project/work/notebooks):
 
-> **The badges know whose repo they're in.** About 30 seconds after you create your copy, an
-> automatic commit ("Point Colab badges at this copy") rewires every badge in it to open
-> **your** notebooks — with your saved work — instead of the shared read-only ones. Reading
-> this on the shared starter page? The badges below open blank previews; make your copy
-> first ([SETUP.md](SETUP.md), Moment 1).
-
-| Week | Card | Notebook | Open |
+| Step | Notebook | Description | Open in Colab |
 |---|---|---|---|
-| 1 | ML-02 | `w01_research_question` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/w01_research_question.ipynb?flush_cache=true) |
-| 2 | ML-03 | `w02_ml_task_framing` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/w02_ml_task_framing.ipynb?flush_cache=true) |
-| 3 | ML-04 | `w03_data_contract` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/w03_data_contract.ipynb?flush_cache=true) |
-| 3 | ML-05 | `w03_feature_leakage_check` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/w03_feature_leakage_check.ipynb?flush_cache=true) |
-| 4 | ML-06 | `w04_signal_audit` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/w04_signal_audit.ipynb?flush_cache=true) |
-| 4 | ML-07 | `w04_baseline_score` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/w04_baseline_score.ipynb?flush_cache=true) |
-| 5 | ML-08 | `w05_model` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/w05_model.ipynb?flush_cache=true) |
-| 6 | ML-09 | `w06_validation_audit` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/w06_validation_audit.ipynb?flush_cache=true) |
-| 7 | ML-10 | `w07_action_playbook` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/w07_action_playbook.ipynb?flush_cache=true) |
-| 8 | ML-11 | `capstone` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/capstone.ipynb?flush_cache=true) |
+| 1 | `01_data_audit_and_preparation` | Problem framing, schema verification, data contract, EDA & signal audits, and feature engineering. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/01_data_audit_and_preparation.ipynb?flush_cache=true) |
+| 2 | `02_model_training_and_evaluation` | Self-contained ML pipeline: Grouped client split, heuristic baseline, model training, honest evaluation (Precision@K, PR-AUC, ROC-AUC), error analysis, and operational review queue generation. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/02_model_training_and_evaluation.ipynb?flush_cache=true) |
 
-Badges not opening *your* copy? Colab's built-in opener always works: **File → Open notebook
-→ GitHub tab** → paste `github.com/you/your-repo` → pick the notebook.
-
-### Prefer local?
+### Running Locally
 
 ```bash
-git clone <this-repo-url>
-cd flyrank-ml-internship-starter
-pip install -r requirements.txt          # or: uv pip install -r requirements.txt
-python scripts/run_all.py
+git clone https://github.com/JamesIvanMatienzo/DA-Project.git
+cd DA-Project
+pip install -r requirements.txt
+jupyter notebook work/notebooks/
 ```
 
-That runs the whole pipeline on the bundled sample and writes results to `outputs/`.
+
 
 ---
 
