@@ -35,9 +35,10 @@ work/
 Copy `capstone_report_template.md` to `capstone_report.md` and fill it in as you go — it
 mirrors the eight axes your work is graded on, so writing it early keeps you honest.
 
-## Project Notebooks
+## Project Notebooks (3-Notebook Modular Architecture)
 
-Your consolidated skeleton notebooks live in `notebooks/`:
-- `01_data_audit_and_preparation.ipynb` — Problem Framing, Data Contract, EDA & Feature Engineering
-- `02_model_training_and_evaluation.ipynb` — Split, Heuristic Baseline, Model Training, Evaluation, and Operational Queue
+Your blank template notebooks live in `notebooks/`:
+- `01_problem_framing_and_data_audit.ipynb` — Problem Framing, 4 Hypotheses, Data Ingestion Scope & Limitations, Feature Vector Assembly & Leakage Defense
+- `02_model_training.ipynb` — Grouped Holdout Split, Heuristic Baselines, Model Training Guide
+- `03_evaluation_and_conclusions.ipynb` — Benchmark Comparisons, Diagnostic Error Audits, Outlier Case Studies, and Operational Action Playbook
 

@@ -32,14 +32,15 @@ The fastest path is Google Colab (one click, zero install). Open Notebook 1 and 
 
 ---
 
-## Project Notebooks — 2-Notebook Architecture
+## Project Notebooks — 3-Notebook Modular Architecture
 
-The project has been consolidated into two modular, clean skeleton notebooks in [`work/notebooks/`](file:///c:/Users/Matienzo/Desktop/DA-Project/work/notebooks):
+The project provides three template notebooks in [`work/notebooks/`](file:///c:/Users/Matienzo/Desktop/DA-Project/work/notebooks) structured with rich markdown word guides, hypothesis framing, and clear `# TODO` code cells for independent experimentation:
 
 | Step | Notebook | Description | Open in Colab |
 |---|---|---|---|
-| 1 | `01_data_audit_and_preparation` | Problem framing, schema verification, data contract, EDA & signal audits, and feature engineering. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/01_data_audit_and_preparation.ipynb?flush_cache=true) |
-| 2 | `02_model_training_and_evaluation` | Self-contained ML pipeline: Grouped client split, heuristic baseline, model training, honest evaluation (Precision@K, PR-AUC, ROC-AUC), error analysis, and operational review queue generation. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/02_model_training_and_evaluation.ipynb?flush_cache=true) |
+| 1 | `01_problem_framing_and_data_audit` | Problem framing & operational decision, 4 core SEO hypothesis audits, data ingestion scope & limitations, feature vector assembly, and strict anti-leakage defense. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/01_problem_framing_and_data_audit.ipynb?flush_cache=true) |
+| 2 | `02_model_training` | Grouped holdout client split (zero client domain leakage), transparent heuristic baselines (Mean Dummy & Word Count Rule), and candidate model training guide. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/02_model_training.ipynb?flush_cache=true) |
+| 3 | `03_evaluation_and_conclusions` | Official benchmark comparisons ($R^2$, RMSE, MAE, Spearman $\rho$), diagnostic residual plots, sub-cohort analysis, outlier post-mortems, and operational refresh queue export. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/work/notebooks/03_evaluation_and_conclusions.ipynb?flush_cache=true) |
 
 ### Running Locally
 

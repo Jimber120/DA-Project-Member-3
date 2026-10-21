@@ -34,3 +34,13 @@ __pycache__/
 .venv/
 venv/
 .env
+*.pkl
+*.pickle
+
+# --- Solution preservation (author reference only, keeps student templates clean) ---
+work/completed_reference/
+work/build_notebooks.py
+work/outputs/
+work/proposal_section4_timeline.md
+work/MODEL_EXECUTION_GUIDE.md
+work/MODEL_COMPETITION_GUIDE.md
