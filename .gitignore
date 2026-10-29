@@ -20,11 +20,6 @@ data/**
 data/processed/
 # outputs: keep the small committed examples (model_report.md, charts/,
 # refresh_queue_sample.csv), ignore regenerated heavy artifacts
-outputs/*.pdf
-outputs/model_results.json
-outputs/summary.json
-outputs/*.csv
-!outputs/refresh_queue_sample.csv
 
 # --- Intern work area ------------------------------------------------------
 # your experiments live in work/; datasets never enter git
