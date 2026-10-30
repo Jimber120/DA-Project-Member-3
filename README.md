@@ -20,13 +20,13 @@ no private client data, no setup headaches.
 
 The fastest path is Google Colab (one click, zero install). Open Notebook 1 and run all cells:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/notebooks/01_first_look_and_discovery.ipynb?flush_cache=true)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jimber120/DA-Project-Member-3/blob/main/work/notebooks/01_problem_framing_and_data_audit.ipynb)
  **Week 1 — Run it, then discover a real truth yourself**
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/notebooks/02_your_first_readable_model.ipynb?flush_cache=true)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jimber120/DA-Project-Member-3/blob/main/work/notebooks/02_model_training.ipynb)
  **Week 2 — The model is just a rule you can read**
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JamesIvanMatienzo/DA-Project/blob/main/notebooks/03_working_with_the_full_release.ipynb?flush_cache=true)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jimber120/DA-Project-Member-3/blob/main/work/notebooks/03_evaluation_and_conclusions.ipynb)
  **Weeks 3+ — The full release (~79M rows) via DuckDB, no download needed** — hosted at
  [`FlyRank/internship-warehouse`](https://huggingface.co/datasets/FlyRank/internship-warehouse) (gated: request access + accept the data-use terms, approval is instant)
 
