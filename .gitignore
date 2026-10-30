@@ -3,10 +3,6 @@ Master_Instructions.pdf
 
 # --- Data leak guard -------------------------------------------------------
 # Block every dataset by default. Only the tiny anonymized starter slice ships.
-data/**
-!data/
-!data/raw/
-!data/raw/content_refresh_anonymized.csv
 
 # Never commit bulk dataset dumps or archives
 *.parquet
