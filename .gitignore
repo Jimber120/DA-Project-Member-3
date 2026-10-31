@@ -3,6 +3,10 @@ Master_Instructions.pdf
 
 # --- Data leak guard -------------------------------------------------------
 # Block every dataset by default. Only the tiny anonymized starter slice ships.
+data/**
+!data/
+!data/raw/
+!data/raw/content_refresh_anonymized.csv
 
 # Never commit bulk dataset dumps or archives
 *.parquet
@@ -16,9 +20,15 @@ Master_Instructions.pdf
 data/processed/
 # outputs: keep the small committed examples (model_report.md, charts/,
 # refresh_queue_sample.csv), ignore regenerated heavy artifacts
+outputs/*.pdf
+outputs/model_results.json
+outputs/summary.json
+outputs/*.csv
+!outputs/refresh_queue_sample.csv
 
 # --- Intern work area ------------------------------------------------------
 # your experiments live in work/; datasets never enter git
+work/**/*.csv
 
 # --- Python / notebooks ----------------------------------------------------
 __pycache__/
@@ -33,6 +43,7 @@ venv/
 # --- Solution preservation (author reference only, keeps student templates clean) ---
 work/completed_reference/
 work/build_notebooks.py
+work/outputs/
 work/proposal_section4_timeline.md
 work/MODEL_EXECUTION_GUIDE.md
 work/MODEL_COMPETITION_GUIDE.md
